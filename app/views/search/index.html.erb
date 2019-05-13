@@ -1,0 +1,9 @@
+<h1>Results:</h1>
+<body>
+  Stations: <%= stations.count %>
+  <% stations.each do |station| %>
+    <ul class="station">
+      <li><%= station %></li>
+    </ul>
+  <% end %>
+</body>
