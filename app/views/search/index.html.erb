@@ -1,9 +1,13 @@
 <h1>Results:</h1>
 <body>
-  Stations: <%= stations.count %>
+  Stations: <%= station_count %>
   <% stations.each do |station| %>
     <ul class="station">
-      <li><%= station %></li>
+      <li>Name: <%= station.name %></li>
+      <li>Address: <%= station.address %></li>
+      <li>Fuel Types: <%= station.fuel_type %></li>
+      <li>Distance: <%= station.distance %> Miles</li>
+      <li>Access Times: <%= station.access_times %></li>
     </ul>
   <% end %>
 </body>
